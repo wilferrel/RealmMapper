@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB3027CE9D29D87C2A4B2DB9 /* Pods_RealmMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E738D4CF9067D9BAF8974059 /* Pods_RealmMapper.framework */; };
+		ECDA56291C95691E0081D3EC /* RealmMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = ECDA56281C95691E0081D3EC /* RealmMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECDA56301C95691E0081D3EC /* RealmMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDA56251C95691E0081D3EC /* RealmMapper.framework */; };
+		ECDA56351C95691E0081D3EC /* RealmMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA56341C95691E0081D3EC /* RealmMapperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECDA56311C95691E0081D3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECDA561C1C95691E0081D3EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECDA56241C95691E0081D3EC;
+			remoteInfo = RealmMapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E27261D1BDC04F29E91D1C9 /* Pods-RealmMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmMapper/Pods-RealmMapper.debug.xcconfig"; sourceTree = "<group>"; };
+		5140A04E947AD17302BEE697 /* Pods-RealmMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmMapper/Pods-RealmMapper.release.xcconfig"; sourceTree = "<group>"; };
+		E738D4CF9067D9BAF8974059 /* Pods_RealmMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDA56251C95691E0081D3EC /* RealmMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDA56281C95691E0081D3EC /* RealmMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmMapper.h; sourceTree = "<group>"; };
+		ECDA562A1C95691E0081D3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECDA562F1C95691E0081D3EC /* RealmMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDA56341C95691E0081D3EC /* RealmMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMapperTests.swift; sourceTree = "<group>"; };
+		ECDA56361C95691E0081D3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECDA56211C95691E0081D3EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3027CE9D29D87C2A4B2DB9 /* Pods_RealmMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDA562C1C95691E0081D3EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDA56301C95691E0081D3EC /* RealmMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA7D346B8CD2EC9A9A606C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E27261D1BDC04F29E91D1C9 /* Pods-RealmMapper.debug.xcconfig */,
+				5140A04E947AD17302BEE697 /* Pods-RealmMapper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C16DA2A90D6D7D63F6BF2AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E738D4CF9067D9BAF8974059 /* Pods_RealmMapper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECDA561B1C95691E0081D3EC = {
+			isa = PBXGroup;
+			children = (
+				ECDA56271C95691E0081D3EC /* RealmMapper */,
+				ECDA56331C95691E0081D3EC /* RealmMapperTests */,
+				ECDA56261C95691E0081D3EC /* Products */,
+				1BA7D346B8CD2EC9A9A606C8 /* Pods */,
+				7C16DA2A90D6D7D63F6BF2AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECDA56261C95691E0081D3EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECDA56251C95691E0081D3EC /* RealmMapper.framework */,
+				ECDA562F1C95691E0081D3EC /* RealmMapperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECDA56271C95691E0081D3EC /* RealmMapper */ = {
+			isa = PBXGroup;
+			children = (
+				ECDA56281C95691E0081D3EC /* RealmMapper.h */,
+				ECDA562A1C95691E0081D3EC /* Info.plist */,
+			);
+			path = RealmMapper;
+			sourceTree = "<group>";
+		};
+		ECDA56331C95691E0081D3EC /* RealmMapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECDA56341C95691E0081D3EC /* RealmMapperTests.swift */,
+				ECDA56361C95691E0081D3EC /* Info.plist */,
+			);
+			path = RealmMapperTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ECDA56221C95691E0081D3EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDA56291C95691E0081D3EC /* RealmMapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ECDA56241C95691E0081D3EC /* RealmMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDA56391C95691E0081D3EC /* Build configuration list for PBXNativeTarget "RealmMapper" */;
+			buildPhases = (
+				A7406DAC2B4A8F4AF8CAC6D9 /* Check Pods Manifest.lock */,
+				ECDA56201C95691E0081D3EC /* Sources */,
+				ECDA56211C95691E0081D3EC /* Frameworks */,
+				ECDA56221C95691E0081D3EC /* Headers */,
+				ECDA56231C95691E0081D3EC /* Resources */,
+				72B5A57F6AF5C1C13D59731D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmMapper;
+			productName = RealmMapper;
+			productReference = ECDA56251C95691E0081D3EC /* RealmMapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECDA562E1C95691E0081D3EC /* RealmMapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDA563C1C95691E0081D3EC /* Build configuration list for PBXNativeTarget "RealmMapperTests" */;
+			buildPhases = (
+				ECDA562B1C95691E0081D3EC /* Sources */,
+				ECDA562C1C95691E0081D3EC /* Frameworks */,
+				ECDA562D1C95691E0081D3EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECDA56321C95691E0081D3EC /* PBXTargetDependency */,
+			);
+			name = RealmMapperTests;
+			productName = RealmMapperTests;
+			productReference = ECDA562F1C95691E0081D3EC /* RealmMapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECDA561C1C95691E0081D3EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "AsianTech Inc";
+				TargetAttributes = {
+					ECDA56241C95691E0081D3EC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					ECDA562E1C95691E0081D3EC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = ECDA561F1C95691E0081D3EC /* Build configuration list for PBXProject "RealmMapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ECDA561B1C95691E0081D3EC;
+			productRefGroup = ECDA56261C95691E0081D3EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECDA56241C95691E0081D3EC /* RealmMapper */,
+				ECDA562E1C95691E0081D3EC /* RealmMapperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECDA56231C95691E0081D3EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDA562D1C95691E0081D3EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72B5A57F6AF5C1C13D59731D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmMapper/Pods-RealmMapper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7406DAC2B4A8F4AF8CAC6D9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECDA56201C95691E0081D3EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDA562B1C95691E0081D3EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDA56351C95691E0081D3EC /* RealmMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECDA56321C95691E0081D3EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECDA56241C95691E0081D3EC /* RealmMapper */;
+			targetProxy = ECDA56311C95691E0081D3EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ECDA56371C95691E0081D3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECDA56381C95691E0081D3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECDA563A1C95691E0081D3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E27261D1BDC04F29E91D1C9 /* Pods-RealmMapper.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RealmMapper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.dev.RealmMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ECDA563B1C95691E0081D3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5140A04E947AD17302BEE697 /* Pods-RealmMapper.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RealmMapper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.dev.RealmMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		ECDA563D1C95691E0081D3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RealmMapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.dev.RealmMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECDA563E1C95691E0081D3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RealmMapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.dev.RealmMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECDA561F1C95691E0081D3EC /* Build configuration list for PBXProject "RealmMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDA56371C95691E0081D3EC /* Debug */,
+				ECDA56381C95691E0081D3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDA56391C95691E0081D3EC /* Build configuration list for PBXNativeTarget "RealmMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDA563A1C95691E0081D3EC /* Debug */,
+				ECDA563B1C95691E0081D3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDA563C1C95691E0081D3EC /* Build configuration list for PBXNativeTarget "RealmMapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDA563D1C95691E0081D3EC /* Debug */,
+				ECDA563E1C95691E0081D3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECDA561C1C95691E0081D3EC /* Project object */;
+}
