@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name   = 'RealmMapper'
-  s.version  = '1.0.0'
+  s.version  = '1.0.1'
   s.license  = 'MIT'
   s.summary  = 'RealmMapper'
   s.homepage = 'https://github.com/zendobk/RealmMapper'
@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
 	s.ios.frameworks = 'Foundation', 'UIKit'
-  s.dependency 'Realm', '~> 0.98.0'
   s.dependency 'RealmSwift', '~> 0.98.0'
   s.dependency 'ObjectMapper', '~> 1.1.0'
   s.source_files = 'RealmMapper/*.swift'
