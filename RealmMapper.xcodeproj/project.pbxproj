@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DB3027CE9D29D87C2A4B2DB9 /* Pods_RealmMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E738D4CF9067D9BAF8974059 /* Pods_RealmMapper.framework */; };
+		EC92A8E61CA3D060004E362B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92A8E41CA3D060004E362B /* Tests.swift */; };
 		ECDA56301C95691E0081D3EC /* RealmMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDA56251C95691E0081D3EC /* RealmMapper.framework */; };
-		ECDA56351C95691E0081D3EC /* RealmMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA56341C95691E0081D3EC /* RealmMapperTests.swift */; };
 		ECDA56421C956B4D0081D3EC /* RealmMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA56401C956B4D0081D3EC /* RealmMapper.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,11 +27,11 @@
 		3E27261D1BDC04F29E91D1C9 /* Pods-RealmMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmMapper/Pods-RealmMapper.debug.xcconfig"; sourceTree = "<group>"; };
 		5140A04E947AD17302BEE697 /* Pods-RealmMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmMapper/Pods-RealmMapper.release.xcconfig"; sourceTree = "<group>"; };
 		E738D4CF9067D9BAF8974059 /* Pods_RealmMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC92A8E31CA3D060004E362B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC92A8E41CA3D060004E362B /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		ECDA56251C95691E0081D3EC /* RealmMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDA562A1C95691E0081D3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECDA562F1C95691E0081D3EC /* RealmMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECDA56341C95691E0081D3EC /* RealmMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMapperTests.swift; sourceTree = "<group>"; };
-		ECDA56361C95691E0081D3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECDA562F1C95691E0081D3EC /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDA56401C956B4D0081D3EC /* RealmMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,11 +72,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC92A8E21CA3D060004E362B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EC92A8E41CA3D060004E362B /* Tests.swift */,
+				EC92A8E31CA3D060004E362B /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		ECDA561B1C95691E0081D3EC = {
 			isa = PBXGroup;
 			children = (
 				ECDA56271C95691E0081D3EC /* RealmMapper */,
-				ECDA56331C95691E0081D3EC /* RealmMapperTests */,
+				EC92A8E21CA3D060004E362B /* Tests */,
 				ECDA56261C95691E0081D3EC /* Products */,
 				1BA7D346B8CD2EC9A9A606C8 /* Pods */,
 				7C16DA2A90D6D7D63F6BF2AD /* Frameworks */,
@@ -87,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				ECDA56251C95691E0081D3EC /* RealmMapper.framework */,
-				ECDA562F1C95691E0081D3EC /* RealmMapperTests.xctest */,
+				ECDA562F1C95691E0081D3EC /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,15 +108,6 @@
 				ECDA562A1C95691E0081D3EC /* Info.plist */,
 			);
 			path = RealmMapper;
-			sourceTree = "<group>";
-		};
-		ECDA56331C95691E0081D3EC /* RealmMapperTests */ = {
-			isa = PBXGroup;
-			children = (
-				ECDA56341C95691E0081D3EC /* RealmMapperTests.swift */,
-				ECDA56361C95691E0081D3EC /* Info.plist */,
-			);
-			path = RealmMapperTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +133,8 @@
 				ECDA56221C95691E0081D3EC /* Headers */,
 				ECDA56231C95691E0081D3EC /* Resources */,
 				72B5A57F6AF5C1C13D59731D /* Copy Pods Resources */,
+				EC92A8DB1CA3CF86004E362B /* SwiftLint */,
+				EC92A8DC1CA3CF97004E362B /* TravisLint */,
 			);
 			buildRules = (
 			);
@@ -143,9 +145,9 @@
 			productReference = ECDA56251C95691E0081D3EC /* RealmMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ECDA562E1C95691E0081D3EC /* RealmMapperTests */ = {
+		ECDA562E1C95691E0081D3EC /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECDA563C1C95691E0081D3EC /* Build configuration list for PBXNativeTarget "RealmMapperTests" */;
+			buildConfigurationList = ECDA563C1C95691E0081D3EC /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				ECDA562B1C95691E0081D3EC /* Sources */,
 				ECDA562C1C95691E0081D3EC /* Frameworks */,
@@ -156,9 +158,9 @@
 			dependencies = (
 				ECDA56321C95691E0081D3EC /* PBXTargetDependency */,
 			);
-			name = RealmMapperTests;
+			name = Tests;
 			productName = RealmMapperTests;
-			productReference = ECDA562F1C95691E0081D3EC /* RealmMapperTests.xctest */;
+			productReference = ECDA562F1C95691E0081D3EC /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +194,7 @@
 			projectRoot = "";
 			targets = (
 				ECDA56241C95691E0081D3EC /* RealmMapper */,
-				ECDA562E1C95691E0081D3EC /* RealmMapperTests */,
+				ECDA562E1C95691E0081D3EC /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +247,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		EC92A8DB1CA3CF86004E362B /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		EC92A8DC1CA3CF97004E362B /* TravisLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = TravisLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which travis >/dev/null; then\ntravis lint \"${SRCROOT}/.travis.yml\"\nelse\necho \"warning: travis not installed\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECDA56351C95691E0081D3EC /* RealmMapperTests.swift in Sources */,
+				EC92A8E61CA3D060004E362B /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +305,78 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		EC92A8E71CA3D2D0004E362B /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ReleaseTest;
+		};
+		EC92A8E81CA3D2D0004E362B /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5140A04E947AD17302BEE697 /* Pods-RealmMapper.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = RealmMapper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.RealmMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = ReleaseTest;
+		};
+		EC92A8E91CA3D2D0004E362B /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.RealmMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = ReleaseTest;
+		};
 		ECDA56371C95691E0081D3EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,7 +479,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.realmmapper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.RealmMapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -397,7 +499,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.realmmapper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.RealmMapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -406,9 +508,9 @@
 		ECDA563D1C95691E0081D3EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = RealmMapperTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.dev.RealmMapperTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.RealmMapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -416,9 +518,9 @@
 		ECDA563E1C95691E0081D3EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = RealmMapperTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.dev.RealmMapperTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.RealmMapperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -431,6 +533,7 @@
 			buildConfigurations = (
 				ECDA56371C95691E0081D3EC /* Debug */,
 				ECDA56381C95691E0081D3EC /* Release */,
+				EC92A8E71CA3D2D0004E362B /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -440,15 +543,17 @@
 			buildConfigurations = (
 				ECDA563A1C95691E0081D3EC /* Debug */,
 				ECDA563B1C95691E0081D3EC /* Release */,
+				EC92A8E81CA3D2D0004E362B /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECDA563C1C95691E0081D3EC /* Build configuration list for PBXNativeTarget "RealmMapperTests" */ = {
+		ECDA563C1C95691E0081D3EC /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECDA563D1C95691E0081D3EC /* Debug */,
 				ECDA563E1C95691E0081D3EC /* Release */,
+				EC92A8E91CA3D2D0004E362B /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
