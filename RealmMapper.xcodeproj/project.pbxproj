@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		3E27261D1BDC04F29E91D1C9 /* Pods-RealmMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmMapper/Pods-RealmMapper.debug.xcconfig"; sourceTree = "<group>"; };
+		4458F2F841A8AC9F98DA15DA /* Pods-RealmMapper.releasetest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmMapper.releasetest.xcconfig"; path = "Pods/Target Support Files/Pods-RealmMapper/Pods-RealmMapper.releasetest.xcconfig"; sourceTree = "<group>"; };
 		5140A04E947AD17302BEE697 /* Pods-RealmMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmMapper/Pods-RealmMapper.release.xcconfig"; sourceTree = "<group>"; };
 		E738D4CF9067D9BAF8974059 /* Pods_RealmMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC92A8E31CA3D060004E362B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 			children = (
 				3E27261D1BDC04F29E91D1C9 /* Pods-RealmMapper.debug.xcconfig */,
 				5140A04E947AD17302BEE697 /* Pods-RealmMapper.release.xcconfig */,
+				4458F2F841A8AC9F98DA15DA /* Pods-RealmMapper.releasetest.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -259,7 +261,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint > /dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		EC92A8DC1CA3CF97004E362B /* TravisLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -273,7 +275,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which travis >/dev/null; then\ntravis lint \"${SRCROOT}/.travis.yml\"\nelse\necho \"warning: travis not installed\"\nfi";
+			shellScript = "if which travis > /dev/null; then\n    travis lint \"${SRCROOT}/.travis.yml\"\nelse\n    echo \"warning: travis not installed\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -349,7 +351,7 @@
 		};
 		EC92A8E81CA3D2D0004E362B /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5140A04E947AD17302BEE697 /* Pods-RealmMapper.release.xcconfig */;
+			baseConfigurationReference = 4458F2F841A8AC9F98DA15DA /* Pods-RealmMapper.releasetest.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
