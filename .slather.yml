@@ -1,4 +1,0 @@
-coverage_service: coveralls
-xcodeproj: RealmMapper.xcodeproj
-ignore:
-  - Pods/*
