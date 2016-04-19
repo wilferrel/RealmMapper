@@ -15,8 +15,6 @@ env:
     - DESTINATION="OS=9.2,name=iPhone 6S Plus"     SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="YES"
 before_install:
   - set -o pipefail
-  - rvm use 2.2.4  
-  - gem install bundler --no-rdoc --no-ri 
   - bundle install --path=vendor/bundle --without=documentation
   - bundler exec pod install
 script:
