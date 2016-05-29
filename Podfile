@@ -4,6 +4,12 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'RealmMapper' do  
-  pod 'RealmSwift', '~> 0.98.0'
-  pod 'ObjectMapper', '~> 1.1.0'
+    pod 'RealmSwift', '~> 1.0'
+    pod 'ObjectMapper', '~> 1.2.0'
+  
+    target 'Tests' do
+        inherit! :search_paths
+        pod 'RealmSwift', '~> 1.0'
+        pod 'ObjectMapper', '~> 1.2.0'
+    end
 end

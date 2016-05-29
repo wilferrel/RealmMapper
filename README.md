@@ -9,7 +9,7 @@
 ## Requirements
 
  - iOS 8.0+
- - Xcode 7.2+
+ - Xcode 7.3+
 
 ## Installation
  
@@ -23,7 +23,7 @@
 $ gem install cocoapods
  ```
  
-> CocoaPods 0.39.0+ is required to build RealmMapper 1.0.0+.
+> CocoaPods 1.0.0+ is required to build RealmMapper 2.0.0+.
  
 To integrate RealmMapper into your Xcode project using CocoaPods, specify it in your `Podfile`:
  
@@ -32,7 +32,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'RealmMapper', '~> 1.0.0'
+pod 'RealmMapper', '~> 2.0.0'
 ```
  
 Then, run the following command:

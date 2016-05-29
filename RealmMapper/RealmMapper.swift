@@ -11,66 +11,64 @@ import ObjectMapper
 
 // MARK: - Extensions
 extension Realm {
-  /*
-   Remove store of default realm.
-   */
-  public class func reset() {
-    if let storePath = Realm.Configuration.defaultConfiguration.path {
-      do {
-        try NSFileManager.defaultManager().removeItemAtPath(storePath)
-      } catch {
-        let error = error as NSError
-        NSLog(error.localizedDescription)
-      }
+    /*
+     Remove store of default realm.
+     */
+    public class func reset() throws {
+        if let fileURL = Realm.Configuration.defaultConfiguration.fileURL {
+            do {
+                try NSFileManager.defaultManager().removeItemAtURL(fileURL)
+            } catch {
+                throw error as NSError
+            }
+        }
     }
-  }
 
-  /*
-   Import object from json.
+    /*
+     Import object from json.
 
-   - warning: This method can only be called during a write transaction.
+     - warning: This method can only be called during a write transaction.
 
-   - parameter type:   The object type to create.
-   - parameter json:   The value used to populate the object.
-   */
-  public func add<T: Object where T: Mappable>(type: T.Type, json: [String: AnyObject]) -> T? {
-    if let obj = Mapper<T>().map(json) {
-      add(obj, update: T.primaryKey() != nil)
-      return obj
+     - parameter type:   The object type to create.
+     - parameter json:   The value used to populate the object.
+     */
+    public func add<T: Object where T: Mappable>(type: T.Type, json: [String: AnyObject]) -> T? {
+        if let obj = Mapper<T>().map(json) {
+            add(obj, update: T.primaryKey() != nil)
+            return obj
+        }
+        return nil
     }
-    return nil
-  }
 
-  /*
-   Import array from json.
+    /*
+     Import array from json.
 
-   - warning: This method can only be called during a write transaction.
+     - warning: This method can only be called during a write transaction.
 
-   - parameter type:   The object type to create.
-   - parameter json:   The value used to populate the object.
-   */
-  public func add<T: Object where T: Mappable>(type: T.Type, json: [[String: AnyObject]]) -> [T]? {
-    if let objs = Mapper<T>().mapArray(json) {
-      add(objs, update: T.primaryKey() != nil)
-      return objs
+     - parameter type:   The object type to create.
+     - parameter json:   The value used to populate the object.
+     */
+    public func add<T: Object where T: Mappable>(type: T.Type, json: [[String: AnyObject]]) -> [T]? {
+        if let objs = Mapper<T>().mapArray(json) {
+            add(objs, update: T.primaryKey() != nil)
+            return objs
+        }
+        return nil
     }
-    return nil
-  }
 }
 
 // MARK: - Transform
 public func <- <T: Object where T: Mappable>(left: List<T>, right: Map) {
-  var objs: [T]?
-  if right.mappingType == .FromJSON {
-    if right.currentValue != nil {
-      left.removeAll()
-      objs <- right
-      if let objs = objs {
-        left.appendContentsOf(objs)
-      }
+    var objs: [T]?
+    if right.mappingType == .FromJSON {
+        if !right.isKeyPresent { return }
+        left.removeAll()
+        objs <- right
+        if let objs = objs {
+            left.appendContentsOf(objs)
+        }
+    } else {
+        objs = left.map { $0 }
+        objs <- right
     }
-  } else {
-    objs = left.map { $0 }
-    objs <- right
-  }
 }
