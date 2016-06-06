@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 	s.ios.frameworks = 'Foundation', 'UIKit'
   s.dependency 'RealmSwift', '~> 1.0'
-  s.dependency 'ObjectMapper', '~> 1.2.0'
+  s.dependency 'ObjectMapper', '~> 1.2'
   s.source_files = 'RealmMapper/*.swift'
 end
