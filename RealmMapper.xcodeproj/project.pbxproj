@@ -12,6 +12,7 @@
 		EC92A8E61CA3D060004E362B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92A8E41CA3D060004E362B /* Tests.swift */; };
 		ECDA56301C95691E0081D3EC /* RealmMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDA56251C95691E0081D3EC /* RealmMapper.framework */; };
 		ECDA56421C956B4D0081D3EC /* RealmMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA56401C956B4D0081D3EC /* RealmMapper.swift */; };
+		ECF49DC31E602A3800C89A89 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF49DC21E602A3800C89A89 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +35,12 @@
 		AB5B6C867E1D44918E386FF8 /* Pods-Tests.releasetest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.releasetest.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.releasetest.xcconfig"; sourceTree = "<group>"; };
 		EC92A8E31CA3D060004E362B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC92A8E41CA3D060004E362B /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		ECBCCDBC1E5FDCF8006D085A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		ECDA56251C95691E0081D3EC /* RealmMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDA562A1C95691E0081D3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECDA562F1C95691E0081D3EC /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDA56401C956B4D0081D3EC /* RealmMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMapper.swift; sourceTree = "<group>"; };
+		ECF49DC21E602A3800C89A89 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FB23B55A2CBA2668A33F63A2 /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +90,7 @@
 		EC92A8E21CA3D060004E362B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ECF49DC21E602A3800C89A89 /* Model.swift */,
 				EC92A8E41CA3D060004E362B /* Tests.swift */,
 				EC92A8E31CA3D060004E362B /* Info.plist */,
 			);
@@ -118,6 +122,7 @@
 			children = (
 				ECDA56401C956B4D0081D3EC /* RealmMapper.swift */,
 				ECDA562A1C95691E0081D3EC /* Info.plist */,
+				ECBCCDBC1E5FDCF8006D085A /* Config.xcconfig */,
 			);
 			path = RealmMapper;
 			sourceTree = "<group>";
@@ -139,13 +144,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECDA56391C95691E0081D3EC /* Build configuration list for PBXNativeTarget "RealmMapper" */;
 			buildPhases = (
-				E3EDFCB64A8916F73AB08B1A /* 📦 Check Pods Manifest.lock */,
+				E3EDFCB64A8916F73AB08B1A /* [CP] Check Pods Manifest.lock */,
 				ECDA56201C95691E0081D3EC /* Sources */,
 				ECDA56211C95691E0081D3EC /* Frameworks */,
 				ECDA56221C95691E0081D3EC /* Headers */,
 				ECDA56231C95691E0081D3EC /* Resources */,
 				EC92A8DB1CA3CF86004E362B /* SwiftLint */,
-				E752FEDA593347E5105154D4 /* 📦 Copy Pods Resources */,
+				E752FEDA593347E5105154D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,12 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECDA563C1C95691E0081D3EC /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				B8DD3C65E2D5E67A736A687F /* 📦 Check Pods Manifest.lock */,
+				B8DD3C65E2D5E67A736A687F /* [CP] Check Pods Manifest.lock */,
 				ECDA562B1C95691E0081D3EC /* Sources */,
 				ECDA562C1C95691E0081D3EC /* Frameworks */,
 				ECDA562D1C95691E0081D3EC /* Resources */,
-				4BCB69749E310D95F07F4D09 /* 📦 Embed Pods Frameworks */,
-				0F789BDBF2C1D98C522116DC /* 📦 Copy Pods Resources */,
+				4BCB69749E310D95F07F4D09 /* [CP] Embed Pods Frameworks */,
+				0F789BDBF2C1D98C522116DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,14 +189,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "AsianTech Inc";
 				TargetAttributes = {
 					ECDA56241C95691E0081D3EC = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
 					};
 					ECDA562E1C95691E0081D3EC = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -231,14 +238,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F789BDBF2C1D98C522116DC /* 📦 Copy Pods Resources */ = {
+		0F789BDBF2C1D98C522116DC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,14 +253,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4BCB69749E310D95F07F4D09 /* 📦 Embed Pods Frameworks */ = {
+		4BCB69749E310D95F07F4D09 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,44 +268,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8DD3C65E2D5E67A736A687F /* 📦 Check Pods Manifest.lock */ = {
+		B8DD3C65E2D5E67A736A687F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E3EDFCB64A8916F73AB08B1A /* 📦 Check Pods Manifest.lock */ = {
+		E3EDFCB64A8916F73AB08B1A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E752FEDA593347E5105154D4 /* 📦 Copy Pods Resources */ = {
+		E752FEDA593347E5105154D4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC92A8E61CA3D060004E362B /* Tests.swift in Sources */,
+				ECF49DC31E602A3800C89A89 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +360,7 @@
 /* Begin XCBuildConfiguration section */
 		EC92A8E71CA3D2D0004E362B /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBCCDBC1E5FDCF8006D085A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -363,8 +372,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -385,6 +396,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -396,7 +408,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7221D0CAA0E5C1CCC0A1FFEF /* Pods-RealmMapper.releasetest.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -416,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB5B6C867E1D44918E386FF8 /* Pods-Tests.releasetest.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.RealmMapperTests;
@@ -425,6 +440,7 @@
 		};
 		ECDA56371C95691E0081D3EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBCCDBC1E5FDCF8006D085A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -436,8 +452,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -473,6 +491,7 @@
 		};
 		ECDA56381C95691E0081D3EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBCCDBC1E5FDCF8006D085A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -484,8 +503,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -505,6 +526,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -516,7 +538,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 441EC82331F7DEE3912956BB /* Pods-RealmMapper.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -536,7 +560,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96363AB1F96D977ED878765E /* Pods-RealmMapper.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -555,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DB8BE378E2DBF20ADC9AA12 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.RealmMapperTests;
@@ -566,6 +593,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9AC61E5C63CBE244B98796A4 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zendobk.RealmMapperTests;

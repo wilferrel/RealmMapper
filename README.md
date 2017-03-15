@@ -9,34 +9,34 @@
 ## Requirements
 
  - iOS 8.0+
- - Xcode 7.3+
+ - Xcode 8.2
 
 ## Installation
- 
+
  > **Embedded frameworks require a minimum deployment target of iOS 8.**
 
 ### CocoaPods
- 
+
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
- 
+
 ```bash
 $ gem install cocoapods
  ```
- 
-> CocoaPods 1.0.0+ is required to build RealmMapper 2.0.0+.
- 
+
+> CocoaPods 1.2+ is required to build RealmMapper 2.1+.
+
 To integrate RealmMapper into your Xcode project using CocoaPods, specify it in your `Podfile`:
- 
+
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'RealmMapper', '~> 2.0.0'
+pod 'RealmMapper', '~> 2.2'
 ```
- 
+
 Then, run the following command:
- 
+
 ```bash
 $ pod install
 ```
@@ -48,7 +48,7 @@ $ pod install
 import RealmSwift
 import ObjectMapper
 import RealmMapper
- 
+
 class User: Object, Mappable {
   dynamic var id: String!
   dynamic var name: String?
@@ -58,16 +58,16 @@ class User: Object, Mappable {
   override class func primaryKey() -> String? {
     return "id"
   }
-  
+
   convenience required init?(_ map: Map) {
     self.init()
     id <- map["id"]
   }
- 
+
   func mapping(map: Map) {
     name <- map["name"]
     address <- map["address"]
-    dogs <- map["dogs"]    
+    dogs <- map["dogs"]
   }
 }
 ```
@@ -76,10 +76,10 @@ class User: Object, Mappable {
 do {
   let realm = Realm()
   try realm.write {
-    realm.add(User.self, jsUser)
-    realm.add(Shop.self, jsShops)
+    realm.map(User.self, json: jsUser)
+    realm.map(Shop.self, json: jsShops)
   }
-} catch {  
+} catch {
 }
 
 ```
