@@ -32,7 +32,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'RealmMapper', '~> 2.2'
+pod 'RealmMapper', '~> 2.1'
 ```
 
 Then, run the following command:
